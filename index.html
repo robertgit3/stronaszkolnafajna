@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>galery</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #E9FFE9;
+        }
+
+        div {
+            display: block;
+            position: relative;
+        }
+
+        .rama {
+            width: 800px;
+            margin: 5% auto;
+            padding: 0;
+            border: 10px solid red;
+        }
+
+        .mini {
+            width: 200px;
+            left: 0;
+            top: 0;
+            padding: 0;
+            float: left;
+            border: 5px solid green;
+        }
+
+        .m {
+            cursor: pointer;
+        }
+
+        .obraz {
+            background-image: url("cameleon_500.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+            width: 500px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="rama">
+    <div class="mini">
+        <img class="m" src="200.png"
+             onmouseover="document.getElementById('big_picture').style.backgroundImage = 'url(500.png)';">
+        <img class="m" src="l200.png"
+             onmouseover="document.getElementById('big_picture').style.backgroundImage = 'url(l500.png)';">
+        <img class="m" src="1663917555887-200x200.png"
+             onmouseover="document.getElementById('big_picture').style.backgroundImage = 'url(pngimg.com - simpsons_PNG95.png)';">
+    </div>
+
+    <div class="obraz" id="big_picture"> </div>
+</div>
+
+</body>
+</html>
